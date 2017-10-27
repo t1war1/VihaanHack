@@ -6,6 +6,6 @@ app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'public_html/index.html'));
 });
 
-app.listen(2222,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("Server started at http://localhost:2222/");
 });
